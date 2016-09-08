@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `name` varchar(80) NOT NULL,
   `sort` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE IF NOT EXISTS `subcategory` (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `subcategory` (
   `sort` int(11) NOT NULL,
   `fkCategoryId` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE IF NOT EXISTS `lib` (
@@ -24,6 +24,6 @@ CREATE TABLE IF NOT EXISTS `lib` (
   `fkSubId` int(11) NOT NULL,
   `sort` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 -- ----------------------------------------------------------------------------------------------------
