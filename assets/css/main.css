@@ -1,0 +1,186 @@
+body{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+aside{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	top: 0px;
+	padding-top: 64px;
+	width: 300px;
+}
+
+aside > nav{
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+	height: 100%;
+	overflow-y: auto;
+	padding-bottom: 50px;
+}
+
+aside li{
+	display: block;
+	width: 100%;
+}
+
+aside nav a{
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 900;
+}
+
+aside > nav > ul > li > ul{
+	display: none;
+}
+
+aside > nav > ul > li > ul > li > a{
+	padding-left: 30px;
+	font-weight: 300;
+}
+
+.version{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 300px;
+	text-align: center;
+}
+
+main nav .brand-logo{
+	margin-left: 15px;
+}
+
+main .tabs .tab a{
+	color: white;
+}
+
+nav p{
+	text-align: center;
+	line-height: 64px;
+	margin: 0;
+	font-size: 2rem;
+}
+
+aside nav .active{
+    background-color: rgba(0,0,0,0.1);
+}
+
+article{
+	padding-left: 300px;
+}
+
+.CodeMirror{
+    height: 100%;
+}
+
+.doc{
+    margin-bottom: 15px;
+}
+
+.doc h5{
+    width: 100%;
+    background-color: #546e7a !important;
+    margin: 0;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.doc textarea{
+    display: none;
+}
+
+.codes + .CodeMirror{
+	min-height: 300px;
+	overflow: none;
+}
+
+.codes + .CodeMirror > .CodeMirror-scroll{
+	overflow: hidden !important;
+}
+
+
+.search .breadcrumb:first-child:before{
+	display: inline-block;
+}
+
+.search .breadcrumb, .breadcrumb:last-child{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 18px;
+}
+
+.search .breadcrumb:before{
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.search .card hr,
+.search .card span
+{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 18px;
+}
+
+.search .card{
+	padding: 15px;
+}
+
+.search .card:hover{
+	background: rgba(55,71,79, 0.8) !important;
+}
+
+.search .card p,
+.search .card ol,
+.search .card li
+{
+	color: white;
+}
+
+strong{
+	color: #ad1414 !important;
+}
+
+.admin .card-panel p{
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+.admin .card-panel p i{
+	padding-right: 0.75rem;
+}
+
+.admin .btn i{
+	font-size: 24px;
+	padding: 0 0.75rem;
+}
+
+.admin .btn{
+	transition: box-shadow .25s;
+    padding: 20px !important;
+    margin: 0.5rem 0 1rem 0 !important;
+    border-radius: 2px;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	text-transform: none;
+	height: 100%;
+}
+
+
+@media only screen and (max-width: 992px){
+	main nav .brand-logo {
+	    left: 0%;
+	    -webkit-transform: translateX(0%);
+	    transform: translateX(0%);
+	}
+	main nav p{
+		line-height: 56px;
+	}
+	article{
+		padding-left: 0px;
+	}
+}
